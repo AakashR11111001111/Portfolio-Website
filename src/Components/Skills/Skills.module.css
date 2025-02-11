@@ -1,0 +1,99 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    padding: 65px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    font-weight: 300;
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(to right, #EC4899, #3B82F6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skilldiv{
+    display: flex;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid white;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.skilldiv img{
+    height: 40px;
+    transform: translateZ(60px);
+}
+
+.skilldiv h1{
+    font-weight: 400;
+    transform: translateZ(60px);
+}
+
+.skilldiv:hover{
+    background: black;
+    z-index: 999999;
+    scale: 1.3;
+    text-shadow: 0 0 10px white;
+}
+
+.skilldiv:hover::after{
+    border-radius: 100px;
+    width: 100%;
+    height: 101%;
+}
+
+.skilldiv:hover h1, .skilldiv:hover img{
+    transform: translateZ(20px);
+}
+
+
+
+/* ----------------- */
+
+.hoverText {
+    transition:0.3s font-weight;
+  }
+  
+  .hoverText:hover {
+    cursor: pointer;
+    font-weight: 900;
+  }
+  
+  .hoverText:hover + .hoverText {
+    font-weight: 600;
+  }
+  
+  .hoverText:hover + .hoverText + .hoverText {
+    font-weight: 400;
+  }
+  
+  .hoverText:has(+ .hoverText:hover) {
+    font-weight: 600;
+  }
+  
+  .hoverText:has(+ .hoverText + .hoverText:hover) {
+    font-weight: 400;
+  }

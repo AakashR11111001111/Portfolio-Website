@@ -1,0 +1,130 @@
+.main{
+    position: relative;
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    cursor: url('/cursor2.png'),auto;
+    align-items: center;
+    color: white;
+    z-index: 10;
+}
+
+.md1{
+    width: 55%;
+}
+
+.heroHead{
+    font-size: 2rem;
+    margin: 1.2rem 0rem;
+    font-weight: 600;
+}
+
+.heroHead span{
+    background: linear-gradient(to right, #EC4899, #3B82F6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.herop1{
+    width: 85%;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.herop2{
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+
+.resumebtn{
+    cursor: pointer;
+    background: #fafaf9;
+    color: #1c1917;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.resumebtn:hover{
+    background: #1c1917;
+    color: #fafaf9;
+}
+
+.imgContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(10px0 10px rgba(0, 0, 0, 0.4));
+}
+
+.imgContainer img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.links{
+    margin: 20px 0px;
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.links svg{
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+}
+
+.links svg:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+}
+
+.linkedin:hover{
+    filter: drop-shadow(0 0 5px #0077B5);
+}
+
+.gmail:hover{
+    filter: drop-shadow(0px 0 5px #c71610)
+}
+
+.github svg{
+    height:fit-content;
+    width: fit-content;
+    background: white;
+    border-radius: 50%;
+}
+.github:hover svg{
+    background: #24292F;
+}
+
+.linkedin, .github, .gmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1000px){
+    
+    .main{
+        flex-direction: column-reverse;
+    }
+    .md1{
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

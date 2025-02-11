@@ -1,0 +1,96 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    padding: 65px 20px 20px 20px;
+}
+.head{
+    font-weight: 300;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 5px;
+    color: white;
+    background: linear-gradient(to right,#3B82F6 , #A855F7, #EC4899);
+    width: fit-content;
+    margin: 0 auto;
+    letter-spacing: 3px;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.nav{
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 30px auto;
+  gap: 70px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav a::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 0%;
+  width: 0%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  transition: all 0.15s ease;
+}
+
+.nav a.active::after{
+  width: 100%;
+  height: 100%;
+}
+
+.nav h4{
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/* ----------------- */
+
+.hoverText {
+    transition:0.3s font-weight;
+  }
+  
+  .hoverText:hover {
+    cursor: pointer;
+    font-weight: 900;
+  }
+  
+  .hoverText:hover + .hoverText {
+    font-weight: 600;
+  }
+  
+  .hoverText:hover + .hoverText + .hoverText {
+    font-weight: 400;
+  }
+  
+  .hoverText:has(+ .hoverText:hover) {
+    font-weight: 600;
+  }
+  
+  .hoverText:has(+ .hoverText + .hoverText:hover) {
+    font-weight: 400;
+  }
