@@ -1,9 +1,9 @@
-// import ThreeCards from '../ThreeCards/ThreeCards';
 import Tilt from 'react-parallax-tilt'
 import styles from './ReactProject.module.css'
 
 import { motion } from 'framer-motion';
 import ThreeCards from '../ThreeCards/ThreeCards';
+import { ReactJSProjects } from '../../Utils/ReactJSProjects';
 
 const ReactProject = () => {
     return (
@@ -13,7 +13,9 @@ const ReactProject = () => {
         transition={{duration: 1}}
         className={styles.main}
         >
-            <ThreeCards />
+            {
+                ReactJSProjects.map((ele, idx) => <ThreeCards key={idx} {...ele} />)
+            }
         </motion.div>
     )
 }
