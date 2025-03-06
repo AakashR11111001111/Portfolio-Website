@@ -97,3 +97,48 @@
   .hoverText:has(+ .hoverText + .hoverText:hover) {
     font-weight: 400;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+  .main{
+    padding: 50px 20px 20px 20px;
+  }
+
+  .head{
+    font-size: 20px;
+    letter-spacing: 2px ;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .container{
+    height: unset;
+    padding: 0vw;
+  }
+
+  .skilldiv h1{
+    font-size: 15px;
+  }
+
+  .skilldiv{
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .skilldiv img{
+    height: 20px;
+  }
+}
