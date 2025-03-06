@@ -46,34 +46,34 @@ const NavBar = () => {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
                         <motion.div
-                            initial={{ opacity: 0, x: -15 }}
+                            initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
+                            exit={{ opacity: 0, x: -10 }}
+                            transition={{ duration: 0.3, delay: 0.1 }}
                         >
                             <NavLink to={"/"}>Home</NavLink>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, x: -15 }}
+                            initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
+                            exit={{ opacity: 0, x: -10 }}
+                            transition={{ duration: 0.3, delay: 0.2 }}
                         >
                             <NavLink to={"/about"}>About</NavLink>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, x: -15 }}
+                            initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.5, delay: 0.6 }}
+                            exit={{ opacity: 0, x: -10 }}
+                            transition={{ duration: 0.3, delay: 0.3 }}
                         >
                             <NavLink to={"/projects"}>Projects</NavLink>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, x: -15 }}
+                            initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.5, delay: 0.8 }}
+                            exit={{ opacity: 0, x: -10 }}
+                            transition={{ duration: 0.3, delay: 0.4 }}
                         >
                             <NavLink to={"/contact"}>Contact</NavLink>
                         </motion.div>
