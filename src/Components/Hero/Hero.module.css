@@ -148,22 +148,35 @@
     .herop1{
         width: 100%;
         font-size: 15px;
-        font-weight: 100;
+        font-weight: 300;
     }
 
     .herop2{
         width: 100%;
-        font-size: 15px;
-        font-weight: 100;
+        font-size: 13px;
+        font-weight: 200;
     }
 
     .resumebtn{
         font-size: 14px;
-        padding: 7px 5px;
+        padding: 10px 5px;
     }
 
     .md1{
         width: 80%;
         margin: 0 auto;
     }
+
+    .links{
+        height: 100px;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .links a svg{
+        height: 50px;
+        width: 50px;
+    }
+
+    
 }
