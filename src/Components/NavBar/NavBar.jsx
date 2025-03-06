@@ -12,7 +12,6 @@ const NavBar = () => {
 
     return (
         <>
-            {/* Main Navigation */}
             <nav className={styles.nav}>
                 <div className={styles.navinner}>
                     <div className={styles.navs}>
@@ -26,7 +25,7 @@ const NavBar = () => {
                 </div>
             </nav>
             
-            {/* Hamburger Menu */}
+         
             <nav className={styles.nav2}>
                 <div onClick={onHamClick} className={`${styles.hamburger} ${styles.islg} ${isActive ? styles.isActive : ""}`}>
                     <span className={styles.hamburgerLine}></span>
@@ -35,7 +34,7 @@ const NavBar = () => {
                 </div>
             </nav>
 
-            {/* Dropdown Menu */}
+        
             <AnimatePresence>
                 {isActive && (
                     <motion.div 

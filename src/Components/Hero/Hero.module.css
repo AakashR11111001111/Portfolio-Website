@@ -118,7 +118,9 @@
     
     .main{
         flex-direction: column-reverse;
+        width: 100%;
     }
+
     .md1{
         text-align: center;
         margin: 0 auto;
@@ -126,5 +128,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .imgContainer img{
+        height: unset;
+        width: 100%;
     }
 }
