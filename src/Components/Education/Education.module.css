@@ -85,25 +85,68 @@ main.row{
 
 .hoverText {
     transition:0.3s font-weight;
-  }
+}
+
+.hoverText:hover {
+	cursor: pointer;
+	font-weight: 900;
+}
+
+.hoverText:hover + .hoverText {
+	font-weight: 600;
+}
+
+.hoverText:hover + .hoverText + .hoverText {
+	font-weight: 400;
+}
+
+.hoverText:has(+ .hoverText:hover) {
+	font-weight: 600;
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+	font-weight: 400;
+}
+
+
+
+
+
+
+
   
-  .hoverText:hover {
-    cursor: pointer;
-    font-weight: 900;
-  }
-  
-  .hoverText:hover + .hoverText {
-    font-weight: 600;
-  }
-  
-  .hoverText:hover + .hoverText + .hoverText {
-    font-weight: 400;
-  }
-  
-  .hoverText:has(+ .hoverText:hover) {
-    font-weight: 600;
-  }
-  
-  .hoverText:has(+ .hoverText + .hoverText:hover) {
-    font-weight: 400;
-  }
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+	.title h1 span{
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+	.col header.title h1{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		width: fit-content;
+	}
+
+	.col header.title{
+		padding: unset;
+	}
+
+	header{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.col .contents{
+		width: unset;
+	}
+}

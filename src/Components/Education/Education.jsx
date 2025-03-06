@@ -12,11 +12,11 @@ const Education = () => {
                         viewport={{ once: false }}
                         transition={{ duration: 1 }}
                         className={styles.title}>
-                        <h1>{"EDUCATIONAL QUALIFICATION".split("").map((child, idx) => (
+                        <h1>{"EDUCATIONAL-QUALIFICATION".split("").map((child, idx) => (
                                         <span className={styles.hoverText} key={idx}>
                                           {child}
                                         </span>
-                            ))}</h1>
+                        ))}</h1>
                     </motion.header>
                     <div className={styles.contents}>
                         <motion.div
