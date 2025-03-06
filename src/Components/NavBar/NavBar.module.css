@@ -149,6 +149,39 @@ a.active::after {
     width: 100%;
     transform: translateY(-50%) rotateZ(135deg);
 }
+.menu {
+    position: absolute;
+    z-index: 999999999;
+    top: 60px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.menu div {
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
 
 
 
