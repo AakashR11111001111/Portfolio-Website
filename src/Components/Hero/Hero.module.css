@@ -103,6 +103,7 @@
     background: white;
     border-radius: 50%;
 }
+
 .github:hover svg{
     background: #24292F;
 }
@@ -115,7 +116,6 @@
 
 
 @media screen and (max-width: 1000px){
-    
     .main{
         flex-direction: column-reverse;
         width: 100%;
@@ -129,6 +129,7 @@
         align-items: center;
         flex-direction: column;
     }
+
     .imgContainer{
         width: 70%;
     }
@@ -139,7 +140,25 @@
     }
 
     .heroHead{
-        font-size: 20px;
+        font-size: 18px;
         margin: 10px 0px;
     }
+
+    .herop1{
+        width: 100%;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .herop2{
+        width: 100%;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .resumebtn{
+        font-size: 12px;
+        padding: 7px 5px;
+    }
+
 }
