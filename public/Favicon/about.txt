@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: Julius Sans One
-- Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/juliussansone/v18/1Pt2g8TAX_SGgBGUi0tGOYEga5W-xXEW6aGXHw.ttf
-- Font License: undefined)

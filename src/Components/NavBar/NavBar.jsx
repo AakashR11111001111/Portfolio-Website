@@ -4,6 +4,7 @@ import styles from './NavBar.module.css';
 
 const NavBar = () => {
     return (
+        <>
         <nav className={styles.nav}>
             <div className={styles.navinner}>
                 <div className={styles.navs}>
@@ -16,6 +17,15 @@ const NavBar = () => {
                 </div>
             </div>
         </nav>
+        <nav className={styles.nav2}>
+            <div className={`${styles.hamburger} ${styles.islg}`}>
+                <span className={styles.hamburgerLine}></span>
+                <span className={styles.hamburgerLine}></span>
+                <span className={styles.hamburgerLine}></span>
+            </div>
+        </nav>
+        </>
     )
 }
+
 export default NavBar;
