@@ -57,7 +57,7 @@ const NavBar = () => {
                             initial={{ opacity: 0, x: -15 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
                         >
                             <NavLink to={"/about"}>About</NavLink>
                         </motion.div>
@@ -65,7 +65,7 @@ const NavBar = () => {
                             initial={{ opacity: 0, x: -15 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
                         >
                             <NavLink to={"/projects"}>Projects</NavLink>
                         </motion.div>
@@ -73,7 +73,7 @@ const NavBar = () => {
                             initial={{ opacity: 0, x: -15 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -15 }}
-                            transition={{ duration: 0.5, delay: 0.5 }}
+                            transition={{ duration: 0.5, delay: 0.8 }}
                         >
                             <NavLink to={"/contact"}>Contact</NavLink>
                         </motion.div>

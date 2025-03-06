@@ -152,8 +152,8 @@ a.active::after {
 .menu {
     position: absolute;
     z-index: 999999999;
-    top: 60px;
-    right: 10px;
+    top: 50px;
+    right: 0px;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     width: 100%;
