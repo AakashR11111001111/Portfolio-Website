@@ -146,19 +146,24 @@
 
     .herop1{
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 100;
     }
-
+    
     .herop2{
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 100;
     }
 
     .resumebtn{
-        font-size: 12px;
+        font-size: 14px;
         padding: 7px 5px;
+    }
+
+    .md1{
+        width: 80%;
+        margin: 0 auto;
     }
 
 }
