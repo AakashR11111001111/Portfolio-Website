@@ -119,6 +119,7 @@
     .main{
         flex-direction: column-reverse;
         width: 100%;
+        min-height: unset;
     }
 
     .md1{
@@ -149,7 +150,7 @@
         font-size: 15px;
         font-weight: 100;
     }
-    
+
     .herop2{
         width: 100%;
         font-size: 15px;
@@ -165,5 +166,4 @@
         width: 80%;
         margin: 0 auto;
     }
-
 }
