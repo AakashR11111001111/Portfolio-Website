@@ -1,8 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 import styles from './NavBar.module.css';
+import { useState } from "react";
 
 const NavBar = () => {
+    const [isActive, setIsActive] = useState(false);
+
+    const onHamClick = () => {
+        setIsActive(!isActive);
+    }
     return (
         <>
         <nav className={styles.nav}>
@@ -18,7 +24,7 @@ const NavBar = () => {
             </div>
         </nav>
         <nav className={styles.nav2}>
-            <div className={`${styles.hamburger} ${styles.islg}`}>
+            <div onClick={onHamClick} className={`${styles.hamburger} ${styles.islg} ${isActive ? styles.isActive : ""}`}>
                 <span className={styles.hamburgerLine}></span>
                 <span className={styles.hamburgerLine}></span>
                 <span className={styles.hamburgerLine}></span>

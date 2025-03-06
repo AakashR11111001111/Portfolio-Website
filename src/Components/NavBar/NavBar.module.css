@@ -1,4 +1,4 @@
-.nav{
+.nav {
     position: fixed;
     left: 0;
     top: 0;
@@ -6,7 +6,7 @@
     z-index: 50;
 }
 
-.navinner{
+.navinner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
     backdrop-filter: blur(20px);
 }
 
-.navs a{
+.navs a {
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -26,7 +26,7 @@
     position: relative;
 }
 
-.navs a::after{
+.navs a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -38,28 +38,28 @@
     transition: all 0.5s ease;
 }
 
-.navs a:hover::after{
+.navs a:hover::after {
     width: 100%;
 }
 
-.navL{
+.navL {
     display: flex;
     justify-content: space-between;
     width: 300px;
 }
 
-.navL a{
+.navL a {
     color: white;
     text-decoration: none;
     position: relative;
     transition: all 0.3s ease;
 }
 
-.navL a:hover{
+.navL a:hover {
     color: #A8A29E;
 }
 
-.navL a::after{
+.navL a::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -72,32 +72,29 @@
     transition: all 0.3s ease;
 }
 
-.navL a:nth-child(1)::after{
+.navL a:nth-child(1)::after {
     background: #EC4899;
 }
 
-.navL a:nth-child(2)::after{
+.navL a:nth-child(2)::after {
     background: #3B82F6;
 }
 
-.navL a:nth-child(3)::after{
+.navL a:nth-child(3)::after {
     background: #A855F7;
 }
 
-
-a.active::after{
+a.active::after {
     width: 105%;
 }
 
-
-.nav2{
+.nav2 {
     border: 1px solid red;
     height: 50px;
     display: none;
 }
 
-  
-  .hamburger {
+.hamburger {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -106,13 +103,13 @@ a.active::after{
     font-size: inherit;
     transition: all 0.3s ease;
     cursor: pointer;
-  }
-  
-  .hamburger.islg {
+}
+
+.hamburger.islg {
     font-size: 2rem;
-  }
-  
-  .hamburgerLine {
+}
+
+.hamburgerLine {
     position: absolute;
     right: 0;
     width: 100%;
@@ -120,40 +117,44 @@ a.active::after{
     border-radius: 0.125em;
     background: currentColor;
     transition: inherit;
-  }
-  
-  .hamburgerLine:nth-child(1) {
+}
+
+.hamburgerLine:nth-child(1) {
     top: 0.125em;
-  }
-  
-  .hamburger.is-active .hamburgerLine:nth-child(1),
-  .w-nav-button.w--open .hamburgerLine:nth-child(1) {
+}
+
+.hamburger.isActive .hamburgerLine:nth-child(1),
+.w-nav-button.w--open .hamburgerLine:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotateZ(-135deg);
-  }
-  
-  .hamburgerLine:nth-child(2) {
+}
+
+.hamburgerLine:nth-child(2) {
     top: 0.438em;
-  }
-  
-  .hamburger.is-active .hamburgerLine:nth-child(2),
-  .w-nav-button.w--open .hamburgerLine:nth-child(2) {
+}
+
+.hamburger.isActive .hamburgerLine:nth-child(2),
+.w-nav-button.w--open .hamburgerLine:nth-child(2) {
     right: 50%;
     width: 0;
-  }
-  
-  .hamburgerLine:nth-child(3) {
+}
+
+.hamburgerLine:nth-child(3) {
     top: 0.75em;
     width: 0.625em;
-  }
-  
-  .hamburger.is-active .hamburgerLine:nth-child(3),
-  .w-nav-button.w--open .hamburgerLine:nth-child(3) {
+}
+
+.hamburger.isActive .hamburgerLine:nth-child(3),
+.w-nav-button.w--open .hamburgerLine:nth-child(3) {
     top: 50%;
     width: 100%;
     transform: translateY(-50%) rotateZ(135deg);
-  }
-  
+}
+
+
+
+
+
 
 
 
@@ -166,11 +167,11 @@ a.active::after{
 
 
 @media (max-width: 1000px) {
-    .nav{
+    .nav {
         display: none;
     }
-    
-    .nav2{
+
+    .nav2 {
         display: block;
     }
 }
