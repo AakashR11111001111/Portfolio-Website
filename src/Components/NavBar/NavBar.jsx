@@ -48,7 +48,12 @@ const NavBar = () => {
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                        <motion.div className={styles.closeBtn} onClick={onNavClick}>
+                        <motion.div  
+                        initial={{opacity: 0, x: -10}}
+                        animate={{opacity: 1, x: 0}}
+                        transition={{duration: .5, delay: .4}}
+                        className={styles.closeBtn} 
+                        onClick={onNavClick}>
                         <svg
                             width="40px"
                             height="40px"
