@@ -91,15 +91,6 @@ const NavBar = () => {
                             initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -10 }}
-                            transition={{ duration: 0.3, delay: 0.3 }}
-                            onClick={onNavClick}
-                        >
-                            <NavLink to={"/projects"}>Projects</NavLink>
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -10 }}
                             transition={{ duration: 0.3, delay: 0.4 }}
                             onClick={onNavClick}
                         >
