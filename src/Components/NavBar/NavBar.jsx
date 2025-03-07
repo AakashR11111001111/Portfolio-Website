@@ -51,7 +51,7 @@ const NavBar = () => {
                         <motion.div  
                         initial={{opacity: 0, x: -10}}
                         animate={{opacity: 1, x: 0}}
-                        transition={{duration: .5, delay: .45}}
+                        transition={{duration: .6, delay: .5}}
                         className={styles.closeBtn} 
                         onClick={onNavClick}>
                         <svg
