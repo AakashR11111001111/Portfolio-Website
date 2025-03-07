@@ -152,7 +152,7 @@ a.active::after {
 .menu {
     position: absolute;
     z-index: 999999;
-    top: 50px;
+    top: 0px;
     right: 0px;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
@@ -182,6 +182,13 @@ a.active::after {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.closeBtn svg path{
+    transition: all 0.1s ease;
+}
+
+.closeBtn:active svg path{
+    fill: red;
+}
 
 
 
