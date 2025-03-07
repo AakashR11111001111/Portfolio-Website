@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter} from 'react-router-dom'
+import { Navigate, RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Layout from "./Layout"
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
@@ -18,8 +18,11 @@ function App() {
         path: "/projects",
         element: <Projects />,
         children: [{
+          index: true, element: <Navigate to="reactProjects" replace /> ,
+        },
+        {
           path: "reactProjects",
-          element: <ReactProject />
+          element: <ReactProject />,
         },
         {
           path: "javascriptProjects",
