@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from './NavBar.module.css';
 
@@ -13,6 +13,21 @@ const NavBar = () => {
     const onNavClick = () => {
         setIsActive(false)
     }
+
+
+    useEffect(()=>{
+        if(isActive){
+            document.body.style.overflow = "hidden";
+            document.body.style.height = "100vh";  
+            document.body.style.position = "fixed"; 
+            document.body.style.width = "100%";  
+        }
+        else{
+            document.body.style.overflow = "auto";
+            document.body.style.height = "auto";
+            document.body.style.position = "static";
+        }
+    },[isActive])
 
     return (
         <>
