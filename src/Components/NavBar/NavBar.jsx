@@ -85,7 +85,7 @@ const NavBar = () => {
                             transition={{ duration: 0.3, delay: 0.2 }}
                             onClick={onNavClick}
                         >
-                            <NavLink to={"/about"}>About</NavLink>
+                            <NavLink to={"/projects"}>Projects</NavLink>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, x: -10 }}
