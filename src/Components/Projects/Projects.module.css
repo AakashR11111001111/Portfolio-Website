@@ -87,3 +87,9 @@
   }
 }
 
+@media screen and (max-width: 376px) {
+  .nav a{
+    padding: 15px;
+  }
+}
+
