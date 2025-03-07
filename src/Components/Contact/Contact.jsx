@@ -47,10 +47,12 @@ const Contact = () => {
                     <textarea name="Message" required></textarea>
                     <div className={styles.label}>Message</div>
                 </motion.div>
-                <motion.button 
-                variants={fieldVariant}
-                className={styles.submitBtn}
-                >Submit</motion.button>
+                <div className={styles.btnDiv}>
+                    <motion.button 
+                    variants={fieldVariant}
+                    className={styles.submitBtn}
+                    >Submit</motion.button>
+                </div>
             </form>
         </motion.div>
     );

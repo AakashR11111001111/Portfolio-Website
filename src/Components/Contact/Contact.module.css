@@ -99,5 +99,22 @@
 
 
 @media screen and (max-width: 1000px) {
-    
+    .field textarea{
+        width: 100%;
+    }
+
+    form{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .submitBtn{
+        margin: 0 auto;
+    }
+
+    .btnDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
