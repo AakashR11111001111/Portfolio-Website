@@ -14,7 +14,9 @@ const Skills = () => {
         { skill: "JAVA", skillimg: "/images/java.png", color: "#F89820" },
         { skill: "CSS", skillimg: "/images/css.png", color: "#2965F1" },
         { skill: "HTML", skillimg: "/images/html.png", color: "#E34C26" },
-        { skill: "GSAP", skillimg: "/images/gsap.png", color: "#88CE02" }
+        { skill: "GSAP", skillimg: "/images/gsap.png", color: "#88CE02" },
+        { skill: "NODEJS" , skillimg: "/images/node.png", color: "#539e43"},
+        { skill: "EXPRESSJS" , skillimg: "/images/express.png", color: "#828282"}
     ];
 
     return (
