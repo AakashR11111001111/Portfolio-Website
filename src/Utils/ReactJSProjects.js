@@ -1,5 +1,12 @@
 export const ReactJSProjects = [
     {
+        title: "Contact Book (Redux)",
+        desc: "A contact management app built with React and Redux, allowing users to efficiently add, edit, and delete contacts. The application uses Redux for state management and provides a clean and responsive UI.",
+        thumbnail: "/Thumbnails/ContactBook.png",
+        liveLink: "https://contact-book-using-react-js.vercel.app/",
+        gitLink: "https://github.com/AakashR11111001111/ContactBook-Using-ReactJS",
+    },
+    {
         title: "CodePen Clone",
         desc: "A powerful online code editor that allows developers to write, preview, and share HTML, CSS, and JavaScript in real-time, with Firebase Authentication and CodeMirror integration.",
         thumbnail: "/Thumbnails/Codepen.png",
